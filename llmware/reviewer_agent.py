@@ -40,7 +40,7 @@ class ReviewerAgent:
         if comment.startswith('/'):
             command = comment.split(' ')[0]
             if command == '/help':
-                return self.return_response('\n'.join([f"{k}: {v}" for k, v in self.help_commands.items()]))
+                return self.return_response('\n'.join([f"`{k}`: {v}" for k, v in self.help_commands.items()]))
             elif command == '/explain':
                 return self.explain_code(diff)
             elif command == '/status':
