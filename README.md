@@ -76,6 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 ```
+`NOTE`: Do not forget to add `OPENAI_API_KEY` in Github Secrets.
 
 ## Documentation
 
