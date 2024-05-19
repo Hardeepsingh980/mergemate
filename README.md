@@ -8,6 +8,9 @@
 
 MergeMate is a sophisticated AI tool crafted to automate pull request reviews and manage command-based interactions within GitHub issues. It harnesses LLMWare, a comprehensive development framework featuring tools and finely-tuned, to deliver insightful, context-aware responses directly within your git workflow.
 
+## Demo Video
+[![Demo](https://img.youtube.com/vi/t1OMRywnoHM/0.jpg)](https://www.youtube.com/watch?v=t1OMRywnoHM)
+
 ## Features
 
 - **Advanced Integration with LLMWare**: Leverages LLMWare to analyze code and manage interactions, utilizing the latest AI technologies for natural language understanding and decision-making.
