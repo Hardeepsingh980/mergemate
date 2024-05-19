@@ -1,5 +1,6 @@
 from llmware.prompts import Prompt
 import os
+from mergemate.prompts import answer_comment, create_review, explain_code
 
 class ReviewerAgent:
     def __init__(self):
@@ -11,19 +12,10 @@ class ReviewerAgent:
             '/ask': 'Ask a question about the the PR.'
         }
 
-        review_prompt = open('mergemate/prompts/create_review.txt', 'r')
-        self.review_prompt = review_prompt.read()
-        review_prompt.close()
-
-        explain_code_prompt = open('mergemate/prompts/explain_code.txt', 'r')
-        self.explain_code_prompt = explain_code_prompt.read()
-        explain_code_prompt.close()
-
-        answer_comment_prompt = open('mergemate/prompts/answer_comment.txt', 'r')
-        self.answer_comment_prompt = answer_comment_prompt.read()
-        answer_comment_prompt.close()
+        self.review_prompt = create_review.PROMPT
+        self.explain_code_prompt = explain_code.PROMPT
+        self.answer_comment_prompt = answer_comment.PROMPT
         
-
     def return_response(self, response):
         header = ":sparkles: **MergeMate Bot** :sparkles:\n\n"
         footer = "\n\n:bulb: *Use `/help` to list all available commands.* :bulb:"

@@ -18,7 +18,11 @@ class GithubProvider:
 
     def create_comment(self, body, event_data):
         repo = self.get_repo(event_data['repository']['full_name'])
-        issue = self.get_issue(repo, number=event_data['issue']['number'])
+        if 'pull_request' in event_data:
+            issue_number = event_data['pull_request']['number']
+        else:
+            issue_number = event_data['issue']['number']
+        issue = self.get_issue(repo, number=issue_number)
         issue.create_comment(body)
 
     def get_diff(self, event_data):
