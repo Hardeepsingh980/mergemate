@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='mergemate',
-    version='0.1.1',
+    version='0.1.2',
     author='Hardeep Singh',
     author_email='hardeep0khalsa122@gmail.com',
     packages=find_packages(),
-    scripts=['scripts/github/comment_handler.py'],
+    scripts=['mergemate/scripts/github/comment_handler.py'],
     url='http://pypi.python.org/pypi/MergeMate/',
     license='LICENSE.txt',
     description='An automated tool to handle GitHub pull requests and comments.',
