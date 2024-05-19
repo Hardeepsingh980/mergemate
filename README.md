@@ -28,6 +28,7 @@ Incorporate MergeMate into your GitHub workflows using this configuration:
 
 ### Workflow Definition
 
+Create the workflow file at `.github/workflows/mergemate.yml`.
 ```yaml
 name: Automated PR Review and Command Handling
 
