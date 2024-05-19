@@ -1,5 +1,10 @@
 
 # MergeMate: Automated PR Review and Command Handling
+[![MIT License](https://img.shields.io/github/license/Hardeepsingh980/mergemate)](https://github.com/Hardeepsingh980/mergemate/blob/master/LICENSE)
+![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
+![version](https://img.shields.io/badge/version-0.1.1-blue)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![commits](https://img.shields.io/github/commit-activity/m/Hardeepsingh980/mergemate)
 
 MergeMate is a sophisticated tool crafted to automate pull request reviews and manage command-based interactions within GitHub issues. It harnesses LLMWare, a comprehensive development framework featuring tools and finely-tuned, to deliver insightful, context-aware responses directly within your git workflow.
 
